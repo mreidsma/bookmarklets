@@ -5,43 +5,30 @@
 
 		<title>Compose New Gmail Bookmarklet</title>
 
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+
 </head>
 
-<body>
+<body class="container">
+
+	<nav role="navigation"><a href="index.html">&lt; Back to Bookmarklets Index</a></nav>
+
+	<h1>Open New Gmail Compose Window</h1>
 
 	<p>This bookmarklet will open a new window set to compose an email if you are logged in to your Gmail account. That way if you need to send an email, you won't have to see how full your inbox has become.</p>
 
-	<h2>Installing</h2>
+	<h2>Installing</h2> 
 
 	<p>To install, drag the link below to your bookmarks toolbar:</p>
 
-	<p><a href="javascript:(function(){window.open('https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&shva=1','Compose%20Gmail','status=no,directories=no,location=no,resizable=no,menubar=no,width=600,height=600,toolbar=no');})();javascript:(function(){window.open('https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&shva=1','Compose%20Gmail','status=no,directories=no,location=no,resizable=no,menubar=no,width=600,height=600,toolbar=no');})()" style="padding:.5em 1em; border: 1px solid #bbb;" width: 8em; margin: 1em auto;>New Email</a></p>
+	<p><a href="javascript:(function(){window.open('https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&shva=1','Compose%20Gmail','status=no,directories=no,location=no,resizable=no,menubar=no,width=600,height=600,toolbar=no');})();" class="button button-primary" id="bookmarklet">New Email</a></p>
 
-	<p>Or, you can install the bookmarklet manually. If you prefer a video, refer to the bookmarklet installation screencast for week two. The instructions are different for each browser:</p>
+	<div id="install-help"><a href="installation.html">Installation Instructions</a></div>
+	<div id="installation"></div>
 
-	<h3>Chrome</h3>
+	<footer><small>Created by <a href="http://matthewreidsma.com">Matthew Reidsma</a> for the <a href="http://infopeople.org">Infopeople</a> course "Customizing Vendor Tools for Better Customer Service," Summer 2015. <a href="http://getskeleton.com/">Styles by Skeleton</a>. Code for this page is on <a href="http://github.com/mreidsma/Bookmarklets">Github</a>.</small></footer>
 
-		<ol>
-			<li>In Chrome, click Bookmarks &gt; Bookmark Manager</li>
-			<li>You will see a new tab open with all of your bookmarks in it</li>
-			<li>Click the blue "New" button in the left column<li>
-			<li>Copy the JavaScript by selecting the text below and selecting Edit &gt; Copy or pressing Ctrl-C:
-				<p><pre><code>javascript:(function(){window.open('https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&shva=1','Compose%20Gmail','status=no,directories=no,location=no,resizable=no,menubar=no,width=600,height=600,toolbar=no');})();javascript:(function(){window.open('https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&shva=1','Compose%20Gmail','status=no,directories=no,location=no,resizable=no,menubar=no,width=600,height=600,toolbar=no');})()</code></pre></p>
-			</li>
-			<li>Click the gray "Add" button.<br /><img src="img/chrome.png" alt="Adding a bookmarklet to Chrome" /></li>
-			<li>If you want the bookmarklet to be in a specific folder, find it in the list and click the icon that looks like a colon with three dots. Choose "Edit" and then select a folder from the drop-down at the top of the screen.</li>
-		</ol>
-
-
-	<h3>2. Firefox</h3>
-
-	<h3>3. Safari</h3>
-
-	<h3>4. Internet Explorer</h3>
-
-	<p>Here is the code for the bookmarklet:</p>
-
-	
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
