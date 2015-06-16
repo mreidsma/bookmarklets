@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+		<title>GVSUHas? Search GVSU Catalog for any ISBN</title>
+
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+
+</head>
+
+<body class="container">
+
+	<nav role="navigation"><a href="index.html">&lt; Back to Bookmarklets Index</a></nav>
+
+	<h1>GVSUHas?</h1>
+
+	<p>This bookmarklet will check to see whether GVSU Libraries has a book by scraping ISBN numbers off a page. It works great on Amazon and Good Reads and anywhere else book ISBNs are found. It was based on <a href="http://jonudell.net/LibraryLookupGenerator.html">John Udell's Library Lookup Generator</a>.</p>
+
+	<h2>Installing</h2> 
+
+	<p>To install, drag the link below to your bookmarks toolbar:</p>
+
+	<p><a href="javascript:setTimeout(%27x99.focus()%27,300)%3Bvar re%3D/(%5B%5C/-%5D%7Cis%5Bbs%5Dn%3D)(%5Cd%7B7,9%7D%5B%5CdX%5D)/i%3Bif(re.test(location.href)%3D%3Dtrue)%7Bvar isbn%3DRegExp.%242%3Bvar x99%3Dwindow.open(%27http://library.catalog.gvsu.edu%27%2B%27/search/i%3D%27%2Bisbn,%27LibraryLookup%27,%27scrollbars%3D1,resizable%3D1,top%3D0,left%3D0,location%3D1,width%3D800,height%3D600%27)%3Bx99.focus()%3B%7D" class="button button-primary" id="bookmarklet">jQuerify</a></p>
+
+	<div id="install-help"><a href="installation.html">Installation Instructions</a></div>
+	<div id="installation"></div>
+
+	<footer><small>Created by <a href="http://matthewreidsma.com">Matthew Reidsma</a> for the <a href="http://infopeople.org">Infopeople</a> course "Customizing Vendor Tools for Better Customer Service," Summer 2015. <a href="http://getskeleton.com/">Styles by Skeleton</a>. Code for this page is on <a href="http://github.com/mreidsma/Bookmarklets">Github</a>.</small></footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
