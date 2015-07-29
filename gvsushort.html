@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+		<title>GVSUHas? Search GVSU Catalog for any ISBN</title>
+
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+
+</head>
+
+<body class="container">
+
+	<nav role="navigation"><a href="index.html">&lt; Back to Bookmarklets Index</a></nav>
+
+	<h1>GVSUHas?</h1>
+
+	<p>Next time you are on a page you'd like to create a GVSU Short Link for, just click this bookmarklet. After logging in, your short URL will be created automatically. You'll only need to log in once per session. Enjoy!</p>
+
+	<h2>Installing</h2> 
+
+	<p>To install, drag the link below to your bookmarks toolbar:</p>
+
+	<p><a href="javascript:(function(){%20window.open('http://gvsu.edu/s/admin-url_edit_post.htm?url='+encodeURIComponent(location.href)+'&title='+document.title);%20})();" class="button button-primary" id="bookmarklet">GVSU Shorten</a></p>
+
+	<div id="install-help"><a href="installation.html">Installation Instructions</a></div>
+	<div id="installation"></div>
+
+	<footer><small>Created by <a href="http://matthewreidsma.com">Matthew Reidsma</a>. Code for this page is on <a href="http://github.com/mreidsma/Bookmarklets">Github</a>.</small></footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
