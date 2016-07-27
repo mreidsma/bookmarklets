@@ -15,13 +15,23 @@
 
 	<h1>GVSUHas?</h1>
 
-	<p>This bookmarklet will check to see whether GVSU Libraries has a book by scraping ISBN numbers off a page. It works great on Amazon and Good Reads and anywhere else book ISBNs are found. It was based on <a href="http://jonudell.net/LibraryLookupGenerator.html">John Udell's Library Lookup Generator</a>.</p>
+		<h2>Installing the Title Search Version</h2>
 
-	<h2>Installing</h2> 
+	<p>This bookmarklet will check to see whether GVSU Libraries has a book or DVD by searching the catalog for the title of the item. It was based on <a href="http://jonudell.net/LibraryLookupGenerator.html">John Udell's Library Lookup Generator</a>.</p>
 
 	<p>To install, drag the link below to your bookmarks toolbar:</p>
 
-	<p><a href="javascript:setTimeout(%27x99.focus()%27,300)%3Bvar re%3D/(%5B%5C/-%5D%7Cis%5Bbs%5Dn%3D)(%5Cd%7B7,9%7D%5B%5CdX%5D)/i%3Bif(re.test(location.href)%3D%3Dtrue)%7Bvar isbn%3DRegExp.%242%3Bvar x99%3Dwindow.open(%27http://library.catalog.gvsu.edu%27%2B%27/search/i%3D%27%2Bisbn,%27LibraryLookup%27,%27scrollbars%3D1,resizable%3D1,top%3D0,left%3D0,location%3D1,width%3D800,height%3D600%27)%3Bx99.focus()%3B%7D" class="button button-primary" id="bookmarklet">GVSUHas?</a></p>
+	<p><a href="javascript:setTimeout('x99.focus()',300);var%20title=encodeURIComponent(document.getElementById('productTitle').textContent);var%20x99=window.open('http://library.catalog.gvsu.edu'+'/search/t'+title,'LibraryLookup','scrollbars=1,resizable=1,top=0,left=0,location=1,width=800,height=600');x99.focus();" class="button button-primary" id="bookmarklet">GVSUHas Title?</a></p>
+
+<h2>Installing the ISBN Version</h2>
+
+	<p>This bookmarklet will check to see whether GVSU Libraries has a book by scraping ISBN numbers off an Amazon book page. It was based on <a href="http://jonudell.net/LibraryLookupGenerator.html">John Udell's Library Lookup Generator</a>.</p>
+
+
+
+	<p>To install, drag the link below to your bookmarks toolbar:</p>
+
+	<p><a href="javascript:setTimeout(%27x99.focus()%27,300)%3Bvar re%3D/(%5B%5C/-%5D%7Cis%5Bbs%5Dn%3D)(%5Cd%7B7,9%7D%5B%5CdX%5D)/i%3Bif(re.test(location.href)%3D%3Dtrue)%7Bvar isbn%3DRegExp.%242%3Bvar x99%3Dwindow.open(%27http://library.catalog.gvsu.edu%27%2B%27/search/i%3D%27%2Bisbn,%27LibraryLookup%27,%27scrollbars%3D1,resizable%3D1,top%3D0,left%3D0,location%3D1,width%3D800,height%3D600%27)%3Bx99.focus()%3B%7D" class="button button-primary" id="bookmarklet">GVSUHas ISBN?</a></p>
 
 	<div id="install-help"><a href="installation.html">Installation Instructions</a></div>
 	<div id="installation"></div>
