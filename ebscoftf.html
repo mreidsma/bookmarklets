@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+		<title>EBSCO Full Text Finder New UI Tester</title>
+
+		<link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+
+</head>
+
+<body class="container">
+
+	<nav role="navigation"><a href="index.html">&lt; Back to Bookmarklets Index</a></nav>
+
+	<h1>Easily test the EBSCO Full Text Finder (FTF) New UI</h1>
+
+	<p>EBSCO recently sent out instructions on how to test their new Full Text Finder (Link Resolver) interface, but they were lousy and not clear. plus, it involved a lot of typing like it was 1996. (It <em>is</em> 1996 at EBSCO, though.) I made a bookmarket that you can use on any Full Text Finder page to load GVSU's new FTF interface. Only works if you are already on a old Full Text Finder page.</p>
+
+	<p><strong>Finding a Full Text Finder Page</strong>: The easy way is to search Library Search for something and look for the good ol' "Get it @ GVSU" button that is now going on 15 years old. Click that, and you'll see the old FTF. Click the bookmarklet and you'll see the same record in the new FTF.</p>
+
+	<p>Don't know what Full Text Finder or a Link Resolver is? This bookmarklet is probably not for you.</p>
+
+	<p><strong>Other libraries</strong>: copy the bookmarklet but change the root URL in the code before '<code>/result/</code> to whatever your OPID is. Read the cryptic marketing email from EBSCO to see a few breadcrumbs that can lead you there. Alternatively, just look at ours.</p>
+
+	<h2>Installing</h2> 
+
+	<p>To install, drag the link below to your bookmarks toolbar:</p>
+
+	<p><a href="javascript:(function(){%20window.open('https://resolver.ebsco.com/c/3x2yes/result/'+location.search);%20})();" class="button button-primary" id="bookmarklet">See New FTF UI</a></p>
+
+	<div id="install-help"><a href="installation.html">Installation Instructions</a></div>
+	<div id="installation"></div>
+
+	<footer><small>Created by <a href="http://matthewreidsma.com">Matthew Reidsma</a>. Code for this page is on <a href="http://github.com/mreidsma/Bookmarklets">Github</a>.</small></footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
